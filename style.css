@@ -2,15 +2,55 @@
 	font-size: 20px;
 }
 
-body .container{
+.container {
 	display: flex;
-	flex-wrap: wrap;
-	flex-direction: column;
-	background-color: #b4b9c1;
-	font-family: 'Fira Sans', 'sans-serif';
+	justify-content: space-between;
+ 
+    
+/*}
+
+.banner .card {*/
+    background: #2c2c2c;
+    border: 1px solid #2c2c2c;
+    border-radius: 10px;
+    box-shadow: 0px 3px 20px 2px #35eea4;
+    
 }
 
+.heading {
+	display: flex;
+    flex-direction: column;
+     
+}
+
+.heading .title {
+    color: #35eea4;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 3rem;
+    font-weight: 600;
+    margin: 2% 8%;
+ }
+
+.heading .intro {
+    color: #35eea4;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    font-size: 0.7rem;
+    margin : 2% 8% ;
+    
+}
+
+.image {
+	justify-content: flex-start;
+	 
+    margin:  2vh;
+
+}
+
+
 hr{
+	
 	border: 0;
  	height: 1px; 
  	width: 40vw;
@@ -18,28 +58,90 @@ hr{
  	background-image: linear-gradient(to right, rgba(255, 255, 255, 0), 
  	rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0)); 
 }
+/*.item{
+	width: 30vw;
+	height: 30vh;
+}*/
+.image img {
+  
+ 	height: 960px;
+ 	width: 958px;
+ 	margin: 2vh;
+ 	padding: 5vh;
+  
+}
 
-img {
+@media screen and (min-width: 768px){
+	.image img{
+		width: 30vh;
+		height: 30vh;
+	}
 
-  width: 20%;
-  height: 20%;
 
+}
+@media screen and (min-width: 468px) and (max-width: 768px){
+	.image img{
+		width: 40vh;
+		height: 40vh;
+	}
+
+	.content{
+		flex-direction: column;
+		align-content: flex-start;
+		max-width: auto;
+	}
+	.info{
+		height: auto;
+		width: 100%;
+	}
+}
+@media screen and (max-width: 468px){
+	.image img{
+		width: 47vh;
+		height: 47vh;
+
+		justify-content: flex-start;
+		align-self: flex-start;
+		margin: 0vh;
+		padding: 0vh;
+	}
+
+	.container {
+		flex-direction: column;
+		align-content: flex-start;
+	}
+	.content{
+		flex-direction: column;
+		align-content: flex-start;
+		
+	}
+	.content .info{
+		height: auto;
+		width: 100%;
+	}
 }
 
 .content {
 	display: flex;
-	flex-wrap: wrap;
+	justify-content: space-between;
+	font-family: 'Fira Sans', sans-serif;
+	font-weight: 300;
+	font-size:1rem;
+	max-width: auto;
+
+
+
 }
 
-.skills{
-	width: 30%;
+.info{
+	width: 33vw;
+	padding: 5px;
 }
 
-.experience {
-	width: 30%;
+.text{
+	font-family: 'Fira Sans', sans-serif;
+	font-weight: 300;
+	font-size: 1rem;
 }
 
-.projects {
-	width: 30%;
-}
 
